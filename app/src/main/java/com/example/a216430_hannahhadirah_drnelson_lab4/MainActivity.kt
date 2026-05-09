@@ -53,6 +53,7 @@ fun FreshKeeperApp(modifier: Modifier = Modifier) {
 
     val currentRoute = navController.currentBackStackEntryAsState().value?.destination?.route
 
+//    provides a basic app layout structure (like frame)
     Scaffold(
         bottomBar = {
 
@@ -136,6 +137,7 @@ fun FreshKeeperApp(modifier: Modifier = Modifier) {
         }
     ) { innerPadding ->
 
+//        defines all screens in the app and maps each route to a composable screen
         NavHost(
             navController = navController,
             startDestination = "home",
@@ -162,3 +164,6 @@ fun FreshKeeperApp(modifier: Modifier = Modifier) {
 }
 
 
+
+//concept from lectures: 1) State management → ViewModel + mutableStateListOf
+//2) Navigation structure → NavController + NavHost

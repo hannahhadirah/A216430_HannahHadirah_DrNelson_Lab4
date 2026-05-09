@@ -77,6 +77,10 @@ fun AddFoodScreen(navController: NavController, viewModel: FoodViewModel) {
 
                 Spacer(modifier = Modifier.height(16.dp))
 
+
+//input is converted to LocalDate
+//food is added into ViewModel
+//user is navigated back to Home
                 Button(
                     onClick = {
                         try {

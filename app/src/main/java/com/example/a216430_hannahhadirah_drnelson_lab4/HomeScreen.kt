@@ -238,6 +238,8 @@ fun ExpandCard(
     }
 }
 
+
+//it creates a reusable UI header across all screens to maintain consistent design.
 @Composable
 fun AppHeader(
     title: String,

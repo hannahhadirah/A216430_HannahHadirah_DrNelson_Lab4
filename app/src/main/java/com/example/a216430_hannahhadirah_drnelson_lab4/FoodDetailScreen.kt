@@ -62,6 +62,7 @@ fun FoodDetailScreen(navController: NavController, viewModel: FoodViewModel) {
 
                 items(foodList) { food ->
 
+//  val daysLeft = viewModel.getDaysLeft(food.expiryDate)
                     val daysLeft = viewModel.getDaysLeft(food.expiryDate)
 
                     val statusColor = when {
